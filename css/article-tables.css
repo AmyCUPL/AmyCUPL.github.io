@@ -17,6 +17,15 @@
   vertical-align: top;
 }
 
+/* Stripe body rows only; theme variables also adapt to dark mode. */
+.md-text .md-table-scroll > table:not([class]) > tbody > tr:nth-child(odd) {
+  background: var(--card);
+}
+
+.md-text .md-table-scroll > table:not([class]) > tbody > tr:nth-child(even) {
+  background: var(--block);
+}
+
 /* Keep overflow discoverable for wide non-text content inside cells. */
 .md-text .md-table-scroll {
   scrollbar-width: auto;
